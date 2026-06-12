@@ -1,0 +1,58 @@
+/* variables.css — Red Diamond Services LLC
+   All design tokens. Never hardcode values outside this file. */
+
+:root {
+  /* ── Brand colors ─────────────────────────────────── */
+  --color-primary:      #1a1a1f; /* Steel Charcoal — bg, nav, footer */
+  --color-bg-dark:      #111115; /* Off-Black — hero, dark sections  */
+  --color-surface:      #f4f2ef; /* Iron White — light sections       */
+  --color-secondary:    #c8ced4; /* Forged Silver — borders, accents  */
+  --color-accent:       #c41e1e; /* Diamond Red — CTAs ONLY           */
+  --color-accent-hover: #a01818; /* Red hover/darken                  */
+  --color-veteran:      #5B9CF6; /* Veteran Blue — icons              */
+  --color-text-dark:    #1a1a1f; /* Body on light surfaces            */
+  --color-text-light:   #eeece8; /* Body on dark surfaces             */
+  --color-metallic:     #7a8590; /* Dividers, decorative 1px lines    */
+
+  /* ── Functional (outside 3-color brand count) ─────── */
+  --color-success: #2e7d52;
+  --color-error:   #b3261e;
+
+  /* ── Typography ───────────────────────────────────── */
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-body:    'DM Sans', sans-serif;
+
+  /* ── Type scale ───────────────────────────────────── */
+  --text-h1:     3rem;
+  --text-h2:     2.25rem;
+  --text-h3:     1.5rem;
+  --text-body:   1rem;
+  --text-small:  0.875rem;
+  --text-micro:  0.75rem;
+  --text-button: 1rem;
+
+  /* ── Spacing (8px base) ───────────────────────────── */
+  --space-xs:  4px;
+  --space-sm:  8px;
+  --space-md:  16px;
+  --space-lg:  24px;
+  --space-xl:  32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 96px;
+
+  /* ── Layout ───────────────────────────────────────── */
+  --container-max: 1200px;
+  --gutter:        24px;
+
+  /* ── Border radius — SHARP sitewide ──────────────── */
+  --radius: 2px;
+
+  /* ── Transitions ──────────────────────────────────── */
+  --transition-fast: 150ms ease-in-out;
+  --transition-base: 300ms ease-in-out;
+  --transition-slow: 500ms ease-in-out;
+
+  /* ── Shadows — minimal; borders carry separation ──── */
+  --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.18);
+}

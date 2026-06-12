@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -o /dev/null -w \"%{http_code} css/reset.css\\\\n%{http_code} css/variables.css\\\\n%{http_code} css/style.css\\\\n%{http_code} js/main.js\\\\n\" http://localhost:8080/css/reset.css http://localhost:8080/css/variables.css http://localhost:8080/css/style.css http://localhost:8080/js/main.js)",
+      "Bash(mkdir -p css js)",
+      "Bash(cp variables.css css/)",
+      "Bash(cp components.css css/)",
+      "Bash(cp style.css css/)",
+      "Bash(cp main.js js/)",
+      "Skill(run)",
+      "Bash(xargs kill -9)",
+      "Bash(python3 -m http.server 8080)",
+      "Bash(curl -s \"https://unpkg.com/lucide@latest/dist/umd/lucide.min.js\")"
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+/* accessibility.css — Red Diamond Services LLC
+   Skip nav, focus styles, screen-reader utilities. */
+
+/* ── Skip navigation link ─────────────────────────── */
+
+.skip-nav {
+  position: absolute;
+  top: -100%;
+  left: var(--gutter);
+  z-index: 9999;
+  padding: var(--space-sm) var(--space-lg);
+  background: var(--color-accent);
+  color: var(--color-text-light);
+  font-size: var(--text-small);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border-radius: 0 0 var(--radius) var(--radius);
+  text-decoration: none;
+  transition: top var(--transition-fast);
+}
+
+.skip-nav:focus {
+  top: 0;
+}
+
+/* ── Focus visible — keyboard only ───────────────── */
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* ── Screen reader only ───────────────────────────── */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

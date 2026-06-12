@@ -1,0 +1,54 @@
+/* typography.css — Red Diamond Services LLC
+   Base type styles. Scale via variables only. */
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  color: var(--color-text-dark);
+  background-color: var(--color-bg-dark);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+
+h1 { font-size: var(--text-h1); }
+h2 { font-size: var(--text-h2); }
+h3 { font-size: var(--text-h3); }
+
+p {
+  font-size: var(--text-body);
+  line-height: 1.65;
+  max-width: 68ch;
+}
+
+/* ── Utility type classes ─────────────────────────── */
+
+.eyebrow {
+  font-size: var(--text-micro);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.section-heading {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 4vw, var(--text-h2));
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  margin-bottom: var(--space-lg);
+}
+
+.section-subhead {
+  font-size: 1.0625rem;
+  color: var(--color-metallic);
+  max-width: 60ch;
+  line-height: 1.65;
+}
+
+.section-subhead--light {
+  color: var(--color-secondary);
+}
